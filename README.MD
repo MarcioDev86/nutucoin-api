@@ -1,6 +1,6 @@
 # nutucoin-api
 
-Once live on a server here are the methods you can use with there endpoints:
+Once live on a server these endpoints will be available:
 
 1. dumpprivkey: /api/dumpprivkey
 2. getnewaddress: /api/getnewaddress
