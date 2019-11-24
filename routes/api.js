@@ -13,6 +13,42 @@ const headers = {
   "content-type": "text/plain;"
 };
 
+router.get("/dumpprivkey", (req, res) => {
+  var dataString = `{"jsonrpc":"1.0","id":"curltext","method":"dumpprivkey","params":[]}`;
+  var options = {
+    url: `http://${USER}:${PASS}@127.0.0.1:${PORT}/`,
+    method: "POST",
+    headers: headers,
+    body: dataString
+  };
+
+  callback = (error, response, body) => {
+    if (!error && response.statusCode == 200) {
+      const data = JSON.parse(body);
+      res.send(data);
+    }
+  };
+  request(options, callback);
+});
+
+router.get("/getnewaddress", (req, res) => {
+  var dataString = `{"jsonrpc":"1.0","id":"curltext","method":"getnewaddress","params":[]}`;
+  var options = {
+    url: `http://${USER}:${PASS}@127.0.0.1:${PORT}/`,
+    method: "POST",
+    headers: headers,
+    body: dataString
+  };
+
+  callback = (error, response, body) => {
+    if (!error && response.statusCode == 200) {
+      const data = JSON.parse(body);
+      res.send(data);
+    }
+  };
+  request(options, callback);
+});
+
 router.get("/getblockcount", (req, res) => {
   var dataString = `{"jsonrpc":"1.0","id":"curltext","method":"getblockcount","params":[]}`;
   var options = {
