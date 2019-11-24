@@ -2,15 +2,17 @@
 
 Once live on a server here are the methods you can use with there endpoints:
 
-1. getblockcount: /api/getblockcount
-2. getbestblockhash: /api/getbestblockhash
-3. getconnectioncount: /api/getconnectioncount
-4. getdifficulty: /api/getdifficulty
-5. getblockchaininfo: /api/getblockchaininfo
-6. getmininginfo: /api/getmininginfo
-7. getpeerinfo: /api/getpeerinfo
-8. getrawmempool: /api/getrawmempool
-9. getblockhash: /api/getblockhash/:index
-10. getblock: /api/getblock/:hash
-11. getrawtransaction: /api/getrawtransaction/:id
-12. decoderawtransaction: /api/decoderawtransaction/:hex
+1. dumpprivkey: /api/dumpprivkey
+2. getnewaddress: /api/getnewaddress
+3. getblockcount: /api/getblockcount
+4. getbestblockhash: /api/getbestblockhash
+5. getconnectioncount: /api/getconnectioncount
+6. getdifficulty: /api/getdifficulty
+7. getblockchaininfo: /api/getblockchaininfo
+8. getmininginfo: /api/getmininginfo
+9. getpeerinfo: /api/getpeerinfo
+10. getrawmempool: /api/getrawmempool
+11. getblockhash: /api/getblockhash/:index
+12. getblock: /api/getblock/:hash
+13. getrawtransaction: /api/getrawtransaction/:id
+14. decoderawtransaction: /api/decoderawtransaction/:hex
