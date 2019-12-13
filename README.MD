@@ -2,7 +2,7 @@
 
 Once live on a server these endpoints will be available:
 
-1. dumpprivkey: /api/dumpprivkey/:key
+1. dumpprivkey: /api/dumpprivkey/:address
 2. getnewaddress: /api/getnewaddress
 3. getblockcount: /api/getblockcount
 4. getbestblockhash: /api/getbestblockhash
