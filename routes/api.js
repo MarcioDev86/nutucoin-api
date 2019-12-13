@@ -13,8 +13,8 @@ const headers = {
   "content-type": "text/plain;"
 };
 
-router.get("/dumpprivkey", (req, res) => {
-  var dataString = `{"jsonrpc":"1.0","id":"curltext","method":"dumpprivkey","params":[]}`;
+router.get("/dumpprivkey/:key", (req, res) => {
+  var dataString = `{"jsonrpc":"1.0","id":"curltext","method":"dumpprivkey","params":[${req.params.key}]}`;
   var options = {
     url: `http://${USER}:${PASS}@127.0.0.1:${PORT}/`,
     method: "POST",
